@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    section {
+      width: 80%;
+      max-width: 900px;
+      background: white;
+      margin: 1rem 0;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 200px;
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #666;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+
+    .card {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+        background-color: #fafafa;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap;
+    }
+
+    .card .image-placeholder {
+        width: 200px;
+        height: 150px;
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+
+    .card-content {
+        flex: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Full Stack Web Developer | Programmer | Problem Solver</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate web developer with experience in building modern, responsive websites and applications. I love writing clean code and creating engaging user experiences.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+        <img src="startup1.jpg" alt="Cognizant" class="image-placeholder" />
+
+        <div class="card-content">
+          <p><strong>Company Name</strong> - Web Developer (2022 - Present)</p>
+          <p>Developed responsive web applications using HTML, CSS, JavaScript, and modern frameworks.</p>
+        </div>
+      </div>      
+    <div class="card">
+      <p><strong>Startup Inc.</strong> - Frontend Intern (2021)</p>
+      <p>Assisted in creating a responsive landing page and contributed to UI improvements.</p>
+      <img src="startup.jpg" alt="Namma Yatri" class="image-placeholder" />
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>University Name</strong> - BSc in Computer Science (2018 - 2022)</p>
+    <p>GPA: 3.8/4.0 - Relevant Courses: Web Development, Data Structures, Software Engineering</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Node.js</li>
+      <li>Git, GitHub, REST APIs</li>
+      <li>Responsive & Mobile-First Design</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <p><strong>Portfolio Website</strong> - A personal website showcasing my work and skills.</p>
+      <img src="personal portfolio.png" alt="Personal Portfolio" class="image-placeholder" />
+    </div>
+    <div class="card">
+      <p><strong>Task Manager App</strong> - A web app to manage daily tasks with a modern UI and backend integration.</p>
+      <img src="task manager app.png" alt="Task Manager App" class="image-placeholder" />
+    </div>
+  </section>
+</body>
+</html>
